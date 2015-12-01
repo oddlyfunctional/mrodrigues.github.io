@@ -8,6 +8,7 @@ dropcap:			true
 # or use the hint from http://jekyllrb.com/docs/github-pages/ to keep this the same 
 # whether working locally or remotely. Start Jekyll with: jekyll serve --baseurl ''
 url:        	  ""
+default_bg: logo.png
 
 # Owner/author information
 owner:
@@ -15,7 +16,7 @@ owner:
   avatar:         avatar.jpeg
   email:          mrodrigues.uff@gmail.com
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
-  description:    A programmer's journal of a life without a boss.
+  description:    Rails and AngularJS expert, enthusiastic learner and deadly robot in my spare time.
   # Social networking links used in footer. Update and remove as you like.
   twitter:        mrodrigues_uff
   facebook:       marcosfelipe.rodrigues.9
