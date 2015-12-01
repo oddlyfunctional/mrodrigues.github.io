@@ -40,6 +40,7 @@ During this time as a freelancer programmer, I'll:
 * Linear algebra and analytic geometry the *right way*. I simply couldn't make
   any use of what I "learned" during the college, and building 3D games it's
   the perfect way to fix those knowledges.
+* Learn AI and Statistics.
 * Build a mobile project, probably using some hybrid framework like
   [Ionic](http://ionicframework.com/).
 * Build a project using functional programming. Not simply how to use
@@ -48,6 +49,9 @@ During this time as a freelancer programmer, I'll:
   [Elixir](http://elixir-lang.org/).
 * Build something cool with [Arduino](https://www.arduino.cc/) or [Raspberry
   Pi](https://www.raspberrypi.org/).
+* Contribute to a major open source project. The
+  [http://24pullrequests.com/](http://24pullrequests.com/) is a nice way to
+  start.
 * Learn advanced vim commands, as well as improve my workflow in many ways.
 * Implement the [GTD](https://en.wikipedia.org/wiki/Getting_Things_Done)
   method efficiently. I've tried before, but just couldn't get it right.
