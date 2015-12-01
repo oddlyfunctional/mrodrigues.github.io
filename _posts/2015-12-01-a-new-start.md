@@ -4,7 +4,6 @@ title: "A new start"
 description: 
 headline: 
 modified: 2015-12-01
-category: webdevelopment
 tags: [jekyll]
 imagefeature: 
 mathjax: 
