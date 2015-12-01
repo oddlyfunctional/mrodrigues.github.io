@@ -15,7 +15,7 @@ owner:
   avatar:         avatar.jpeg
   email:          mrodrigues.uff@gmail.com
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
-  description:    A programmer's journal to a life without a boss.
+  description:    A programmer's journal of a life without a boss.
   # Social networking links used in footer. Update and remove as you like.
   twitter:        mrodrigues_uff
   facebook:       marcosfelipe.rodrigues.9
@@ -52,7 +52,7 @@ paginate:    5
 paginate_path: "page:num"
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   /:categories/:title
+permalink:   /:title
 
 kramdown:
   auto_ids: true
