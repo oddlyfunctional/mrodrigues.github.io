@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "A Series of Unfortunate Events"
-headline: 
+headline: "Have you ever failed so hard you almost gave up of your entire career?"
+description: "Have you ever failed so hard you almost gave up of your entire career?"
 modified: 2015-12-07
 imagefeature: "covers/a-series-of-unfortunate-events.jpg"
 mathjax: 
