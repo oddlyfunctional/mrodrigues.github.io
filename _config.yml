@@ -1,5 +1,5 @@
 title:            Marcos Rodrigues
-description:      "Life without a boss"
+description:      "Oddly Functional"
 logo:             logo.png
 disqus_shortname: mfprodrigues
 share:            true
@@ -14,13 +14,13 @@ default_bg: logo.png
 owner:
   name:           Marcos Rodrigues
   avatar:         avatar.jpeg
-  email:          mrodrigues.uff@gmail.com
+  email:          hi@oddlyfunctional.com
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
   description:    Rails and AngularJS expert, enthusiastic learner and deadly robot in my spare time.
   # Social networking links used in footer. Update and remove as you like.
-  twitter:        mrodrigues_uff
-  facebook:       marcosfelipe.rodrigues.9
-  github:         mrodrigues
+  twitter:        oddlyfunctional
+  facebook:       oddlyfunctional
+  github:         oddlyfunctional
   # For Google Authorship https://plus.google.com/authorship
   google_plus:    https://plus.google.com/u/0/105387902131919964437/
 
