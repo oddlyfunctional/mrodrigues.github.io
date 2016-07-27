@@ -13,13 +13,13 @@ comments: true
 featured: true
 ---
 
-Even though it's an essential part of marketing yourself, I could never come up
+Even though it’s an essential part of creating an online presence, I could never come up
 with a proper username that would work across different services. Today I
 decided that I would find one, no matter what. It should be easy to write, easy
 to remember, easy to understand in a spoken conversation and, in a less
 measurable dimension, it should *sound* good.
 
-The first step was finding a sistematic way to check whether a username was
+The first step was finding a systematic way to check whether a username was
 available in different services. There are several websites that do exactly
 that, I've used [checkusernames.com](http://checkusernames.com/), which is
 easier to scan quickly since everthing fits in less than two pages (you can get
@@ -40,8 +40,7 @@ Damn.
 
 I yielded: I'm not that good at inventing names (specially in a language that's
 not my native one), so to overcome this obstacle I would need to use my other
-skills. I would find a list of words, programatically apply some
-constraints, and choose from the options in the resulting list.
+skills. I would find a list of words, programmatically apply some constraints, and choose from the options in the resulting list.
 
 Some time ago I released a small game for a [Ludum
 Dare](http://ludumdare.com/) called [I AM GONNA SMACK YOU WITH MY
@@ -73,7 +72,7 @@ $ cat /usr/share/dict/words | grep "^\w\{1,5\}$" | wc -l
 Still not very helpful. I figured that a lot of words were proper nouns, so we could remove the ones starting with a capital letter:
 
 ```bash
-$ cat /usr/share/dict/words | grep "^[a-z]\w\{1,4\}$" | wc -l<Paste>
+$ cat /usr/share/dict/words | grep "^[a-z]\w\{1,4\}$" | wc -l
 7583
 ```
 
@@ -91,10 +90,9 @@ $ cat /usr/share/dict/words | grep "^[a-z]\w\{1,2\}ly$" > awesome_adjectives.txt
 ```
 
 This is a common pattern for handling huge inputs, you start massaging it,
-figuring out patterns and excluding them, until you have a dataset which's size
-is workable.
+figuring out patterns and excluding them, until you have a dataset which has a workable size.
 
-Just for curiosity, here's a Ruby script to accomplish the same:
+Just for curiosity, here's a little Ruby script to accomplish the same:
 
 ```ruby
 # I'm using each_line so we don't load everyhing into memory at the same time
