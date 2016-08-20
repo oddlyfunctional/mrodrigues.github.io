@@ -6,7 +6,7 @@ headline:
 modified: 2016-08-20 01:51:55 -0300
 category: personal
 tags: [security, pokemon, reverse engineering, http, api]
-imagefeature: 
+imagefeature: "covers/pokemon-go-plus.jpg"
 mathjax: 
 chart: 
 comments: true
