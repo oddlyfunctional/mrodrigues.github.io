@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Functional Programming - Pure Functions"
-description: 
+description: "A brief introduction to Functional Programming with pure functions using practical examples."
 headline: 
 modified: 2016-09-06 18:51:12 -0300
 category: personal

@@ -1,11 +1,11 @@
 ---
 layout: post
 title: "Making a game with Functional Programming - Part 1"
-description: 
+description: "Let's make a point-and-click adventure game using Functional Programming! In this first post, we'll write a simple code to render moving squares while introducing some basic concepts of game development."
 headline: 
 modified: 2016-09-19 14:58:05 -0300
 category: personal
-tags: []
+tags: [JavaScript, Functional Programming, Game Development]
 imagefeature: 'covers/day-of-the-tentacle.jpg'
 mathjax: 
 chart: 
