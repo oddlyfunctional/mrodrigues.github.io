@@ -535,7 +535,16 @@ pre {
 
 code {
   font-size: 0.9375rem;
-  line-height: 1.2; }
+  line-height: 1.2;
+  color: grey !important;
+  font-weight: normal !important; }
+
+a {
+	text-decoration: underline; }
+
+/* Fixing wrong color on underline (bug happening on Chrome) */
+p > a > code {
+	text-decoration: underline !important; }
 
 iframe {
   border: 0; }

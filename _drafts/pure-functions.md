@@ -1,17 +1,3 @@
----
-layout: post
-title: "Functional Programming - Pure Functions"
-description: 
-headline: 
-modified: 2016-09-06 18:51:12 -0300
-category: personal
-tags: [JavaScript, Functional Programming]
-imagefeature: 
-mathjax: 
-chart: 
-comments: true
-featured: false
----
 Functional programming made a huge comeback in the recent years, after decades of being little more than an academic curiosity for most of the industry (Haskell's unofficial slogan is "avoid success at all costs"). Its fame is well deserved, but its barrier of entry sometimes may seem too high. Amidst monads, functors, transducers and a *lot* of other arcane terms, newcomers simply don't know where to begin. They may even feel stupid, thinking it's just too hard for them. I know I have.
 
 Living up to the username I chose, I decided to start this series, filled with practical examples to demonstrate how we can apply functional programming concepts to our everyday code. Now, instead of trying to define what it is (you have [Wikipedia](https://en.wikipedia.org/wiki/Functional_programming) for that), I'll start showing the most fundamental, trivial and impacting idea that is both the cornerstone in which all of the other concepts are built upon and the reason for them to exist in the first place: pure functions.
@@ -372,8 +358,7 @@ One thing you may have noticed is that a clear separation emerges in the program
 
 You can test that the previous code works by booting up a simple server like [json-server](https://github.com/typicode/json-server) (awesome lib!) and requiring [jQuery](https://jquery.com/):
 
-*notifications.json*:
-
+`notifications.json`:
 ```json
 {
   "notifications": [
@@ -394,8 +379,7 @@ npm -g install json-server
 json-server --watch notifications.json
 ```
 
-*notifications.html*:
-
+`notifications.html`:
 ```html
 <!DOCTYPE>
 <html>
