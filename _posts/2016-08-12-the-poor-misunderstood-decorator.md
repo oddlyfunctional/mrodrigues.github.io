@@ -4,7 +4,7 @@ title: "The poor, misunderstood decorator"
 description: 
 headline: 
 modified: 2016-08-12 12:16:48 -0300
-category: personal
+category: programming
 tags: [design patterns, decorator, ruby]
 imagefeature: "covers/colorful-nesting-matryoshka-dolls.jpg"
 mathjax: 

@@ -4,7 +4,7 @@ title: "Functional Programming - Pure Functions"
 description: "A brief introduction to Functional Programming with pure functions using practical examples."
 headline: 
 modified: 2016-09-06 18:51:12 -0300
-category: personal
+category: programming
 tags: [JavaScript, Functional Programming]
 imagefeature: 
 mathjax: 

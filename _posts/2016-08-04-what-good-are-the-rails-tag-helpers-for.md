@@ -4,7 +4,7 @@ title: "What are Rails helpers good for, anyway?"
 description: 
 headline: 
 modified: 2016-08-04 09:14:30 -0300
-category: personal
+category: programming
 tags: [ruby, rails, html]
 imagefeature: 
 mathjax: 

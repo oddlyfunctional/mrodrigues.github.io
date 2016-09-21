@@ -4,7 +4,7 @@ title: "Finding words in a UNIX-like system (or how to create a unique username)
 description: "How to come up with a unique username using UNIX tools to help you find out words."
 headline: "How to come up with a unique username using UNIX tools to help you find out words."
 modified: 2016-07-27 15:18:15 -0300
-category: personal
+category: programming
 tags: [unix, bash, marketing]
 imagefeature: 
 mathjax: 

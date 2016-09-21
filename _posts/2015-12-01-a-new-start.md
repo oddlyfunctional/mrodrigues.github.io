@@ -4,6 +4,7 @@ title: "A new start"
 description: The first steps of a programmer as a 100% freelancer and mentor.
 headline: 
 modified: 2015-12-01
+category: musings
 imagefeature: 
 mathjax: 
 chart: 

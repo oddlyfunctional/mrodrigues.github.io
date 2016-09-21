@@ -4,7 +4,7 @@ title: "Making a game with Functional Programming - Part 1"
 description: "Let's make a point-and-click adventure game using Functional Programming! In this first post, we'll write a simple code to render moving squares while introducing some basic concepts of game development."
 headline: 
 modified: 2016-09-19 14:58:05 -0300
-category: personal
+category: programming
 tags: [JavaScript, Functional Programming, Game Development]
 imagefeature: 'covers/day-of-the-tentacle.jpg'
 mathjax: 
@@ -20,7 +20,7 @@ This is precisely why I'm beginning this series: to see how feasible it is, or w
 Our goal today is simple: to write some code that will render a moving drawing. Nothing too ambitious, just enough to get us started. Before we move forward, though, it's important to make some points clear:
 
 * I'll be using some ES2015 features, like [`Object.assign`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Object/assign);
-* This is an experiment, so the code you'll see here is far from what a real application would need;
+* This is an experiment, so the code you'll see here is far from what a real functional application would need or look like;
 * I'm starting from the basics, so if you're a more advanced game developer this is probably not for you.
 
 For starters, a bit of concepts on game development. A video game as we understand it today is an interactive program that continuously calculates an updated world state and renders a new representation of that state (a frame), while being able to receive inputs from the user and process them to change the state. This means that, differently from a server responding to an HTTP request or a widget responding to user interaction, we need a program that doesn't finish. Everything in the game happens inside of what is called a game loop, so let's start with that. One thing you'll notice is that this layer of our program is, by definition, impure. We need a place to produce side-effects, otherwise the user wouldn't ever notice things changed, so the pure part of our game will be the `update`, and the loop and rendering parts are impure (I realize I could use the IO monad to pack renderings as pure functions, but at the moment I'm unsure of how I'd do that).

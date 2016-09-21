@@ -4,7 +4,7 @@ title: "Reverse engineering Pokémon Go's API as a non-hacker - part 1"
 description: A disheartening tale about a non-hacker who only wanted to reverse engineer the Pokémon Go API. How hard could it be?
 headline: 
 modified: 2016-08-20 01:51:55 -0300
-category: personal
+category: programming
 tags: [security, pokemon, reverse engineering, http, api]
 imagefeature: "covers/pokemon-go-plus.jpg"
 mathjax: 
