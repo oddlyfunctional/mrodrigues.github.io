@@ -12,7 +12,6 @@ chart:
 comments: true
 featured: false
 ---
-
 Games are essentially stateful mediums: there are levels, items, character statuses, camera position, etc. The world state changes on every game loop, dozens of times per second, not only reacting to events but constantly. They are also very easy to think in terms of Object Oriented Design: characters have attributes like speed and actions like "move". Therefore, I always thought it'd be hard to use functional programming for game development. In fact, it may be simply impractical for performance-heavy games that need to trim each millisecond possible. However, there is no reason not to *try* it for a simple game.
 
 This is precisely why I'm beginning this series: to see how feasible it is, or what difficulties I'll find while developing a small game with FP. For this, I'll be writing a point-and-click adventure game, based on classic LucasArts' masterpieces like Day of the Tentacle and Monkey Island. I chose this genre because it is simple enough to avoid many of the common complexities of developing a game, while giving plenty of space to experiment with state changes (inventory, dialogue options, triggers, etc.) and a bit of path-finding algorithms.
