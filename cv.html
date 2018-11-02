@@ -1,0 +1,38 @@
+---
+layout: cv
+permalink: /cv/
+title: CV
+---
+<link href="/assets/css/cv.css" type="text/css" rel="stylesheet">
+
+<div class="profile">
+  <img src="/images/avatar.jpeg" class="avatar" /> 
+
+  <div class="content">
+    <h1>Marcos Rodrigues</h1>
+    <small>Team leader, Full-Stack Developer, Functional Programming enthusiast.</small>
+    <p>
+      <em>30 years, married, living in Yokohama, Japan.</em>
+    </p>
+  </div>
+</div>
+
+<div class="addresses">
+  <a href="mailto:hi@oddlyfunctional.com">hi@oddlyfunctional.com</a>
+  | <a href="tel:+81 70-1812-4404">+81 70-1812-4404</a>
+  | <a href="https://www.oddlyfunctional.com">https://www.oddlyfunctional.com</a>
+</div>
+
+<div class="wrapper">
+  <div class="container">
+    {% for section in site.cv.sections %}
+      {% capture section_md %}
+        {% include_relative cv/{{section}}.html %}
+      {% endcapture %}
+
+      {{ section_md | markdownify }}
+    {% endfor %}
+  </div>
+</div>
+<!-- ### Footer
+Last updated: November 2018 -->

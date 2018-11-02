@@ -161,3 +161,119 @@ prose:
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
+
+cv:
+  sections:
+    - current_position
+    - what_im_looking_for
+    - specialized_in
+    - skills
+    - technologies
+    - education
+    - publications
+    - experience
+
+  jobs:
+    - date: "Feb/2018 - Present"
+      role: "Lead Fullstack Developer"
+      techs: "Rails, React, Redux"
+      company: "oduk.k.k."
+      location: "Yokohama, Kanagawa, Japan"
+      description: >
+        Currently building a TripAdvisor-like application in a team of 2
+        developers, focused on high-quality videos of venues and experiences in
+        Japan, in preparation for the 2020 Olympics.
+
+    - date: "Mar/2017 - Present"
+      role: "CTO"
+      techs: "Rails"
+      company: "Santo Contrato Gestão Contratual"
+      location: "Remote position"
+      description: >
+        Business partner in a lawtech company. Built alone a platform for
+        managing legal documents, deadlines and other assets, with
+        collaborative sharing, versioning, live chat, notifications and
+        granular permissions system.
+
+    - date: "Sep/2017 - Apr/2018"
+      role: "Consulting and Development"
+      techs: "Rails, React, Redux"
+      company: "LanguagesSkills®"
+      location: "São Paulo, Brazil"
+      description: >
+        Provided consulting sessions and built parts of a language-learning
+        platform focused on specialized training for employees of
+        organizations.
+
+    - date: "Mar/2017 - Dec/2017"
+      role: "Lead Teacher"
+      company: "Le Wagon"
+      location: "São Paulo, Brazil"
+      description: >
+        Teacher at an international coding bootcamp. Was responsible for
+        lectures and one-on-one help. Due to my firmly grounded ability to
+        answer questions and solve bugs, as well as the thoroughness of my
+        explanations, several students sought me for mentoring, career advice
+        and consulting on their startups.
+
+    - date: "Jan/2016 - Jun/2016"
+      role: "CTO"
+      techs: "Rails, Angular"
+      company: "Mozsaico"
+      location: "Remote position"
+      description: >
+        Business partner from day zero in an edutech startup, developed a
+        platform for managing and discussing content within organizations.
+        Built the MVP alone, which included a web application and a Chrome
+        extension.
+
+    - date: "Dec/2015 - Apr/2018"
+      role: "Online Consulting, Mentoring and Freelance"
+      techs: "Ruby, Angular, React, Redux, Python, Azure Machine Learning, Meteor"
+      description: >
+        Provided consulting sessions on technology decisions, refactoring,
+        software design and debugging, as well as mentoring and career advice.
+
+    - date: "Feb/2014 - Dec/2015"
+      role: "Lead Fullstack Developer"
+      techs: "Rails, Angular"
+      company: "Dunno"
+      location: "Remote position"
+      description: >
+        Business partner in an edutech startup. Responsible for making
+        technology decisions in a team of 2 engineers, building the project
+        from scratch while working closely to the CEO to validate the product.
+        The app was used by teachers and their students to organize content and
+        collaborate on discussion topics, as well as by organizations to
+        monitor their progress. It was my first time writing a SPA, and when I
+        first started to learn more deeply JavaScript's foundations.
+
+    - date: "Dec/2012 - Feb/2014"
+      role: "Fullstack Developer"
+      techs: "Rails, jQuery, AWS EC2"
+      company: "Outra Coisa"
+      location: "Rio de Janeiro, Brazil"
+      description: >
+        Maintained and wrote new features for production applications (audio
+        clips marketplace and city guide) in a team of 4 developers. Was
+        responsible for the Amazon EC2 server and the migration to Heroku.
+        Strong emphasis in design, with pixel-perfect implementations.
+
+    - date: "Jul/2010 - Oct/2011"
+      role: "Fullstack Developer"
+      techs: "Rails, jQuery"
+      company: "STI"
+      location: "Niterói, Brazil"
+      description: >
+        Developed from scratch a social network (team of 3) and a school
+        administration system (team of 8) for a college. First job after
+        learning Ruby on Rails, was part of a Scrum team in close contact with
+        the client, performing requirements gathering and coding.
+
+    - date: "Aug/2008 - May/2009"
+      role: "Desktop Developer"
+      techs: "Java"
+      company: "LMDC"
+      location: "Niterói, Brazil"
+      description: >
+        Desktop development for ERD application using javax.swing.

@@ -1,0 +1,23 @@
+
+<h2 class="text-center">Work experience</h2>
+
+{% for job in site.cv.jobs %}
+<div class="job section">
+  <div class="section-left half">
+    <small>{{ job.date }}</small>
+    <h4>{{ job.role }}</h4>
+
+    {% if job.company %}
+    <p>{{ job.company }} - <em>{{ job.location }}</em></p>
+    {% endif %}
+
+    {%if job.techs %}
+    <p><strong>{{ job.techs }}</strong></p>
+    {% endif %}
+  </div>
+
+  <div class="section-right">
+    <p>{{ job.description }}</p>
+  </div>
+</div>
+{% endfor %}
