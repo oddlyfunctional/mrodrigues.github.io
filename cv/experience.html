@@ -4,7 +4,16 @@
 {% for job in site.cv.jobs %}
 <div class="job section">
   <div class="section-left half">
-    <small>{{ job.date }}</small>
+    <small>
+      {{ job.from | date: "%b %Y" }} - 
+      {% if job.to %}
+      {{ job.to | date: "%b %Y" }}
+      {% else %}
+      Present
+      {% endif %}
+      •
+      {{ job.from | time_distance job.to }}
+    </small>
     <h4>{{ job.role }}</h4>
 
     {% if job.company %}

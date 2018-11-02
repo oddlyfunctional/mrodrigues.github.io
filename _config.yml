@@ -162,6 +162,8 @@ prose:
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
 
+plugins_dir: ./_plugins
+
 cv:
   sections:
     - current_position
@@ -174,7 +176,7 @@ cv:
     - experience
 
   jobs:
-    - date: "Feb/2018 - Present"
+    - from: "2018-02-01"
       role: "Lead Fullstack Developer"
       techs: "Rails, React, Redux"
       company: "oduk.k.k."
@@ -184,28 +186,30 @@ cv:
         developers, focused on high-quality videos of venues and experiences in
         Japan, in preparation for the 2020 Olympics.
 
-    - date: "Mar/2017 - Present"
+    - from: "2017-03-01"
       role: "CTO"
       techs: "Rails"
       company: "Santo Contrato Gestão Contratual"
       location: "Remote position"
       description: >
-        Business partner in a lawtech company. Built alone a platform for
+        Business partner in a lawtech startup. Built alone a platform for
         managing legal documents, deadlines and other assets, with
         collaborative sharing, versioning, live chat, notifications and
         granular permissions system.
 
-    - date: "Sep/2017 - Apr/2018"
-      role: "Consulting and Development"
+    - from: "2017-09-01"
+      to: "2018-04-01"
+      role: "Consultant and Developer"
       techs: "Rails, React, Redux"
       company: "LanguagesSkills®"
       location: "São Paulo, Brazil"
       description: >
-        Provided consulting sessions and built parts of a language-learning
-        platform focused on specialized training for employees of
-        organizations.
+        Provided consulting sessions for an edutech startup and built parts of
+        a language-learning platform focused on specialized training for
+        employees of organizations.
 
-    - date: "Mar/2017 - Dec/2017"
+    - from: "2017-03-01"
+      to: "2017-12-01"
       role: "Lead Teacher"
       company: "Le Wagon"
       location: "São Paulo, Brazil"
@@ -216,7 +220,8 @@ cv:
         explanations, several students sought me for mentoring, career advice
         and consulting on their startups.
 
-    - date: "Jan/2016 - Jun/2016"
+    - from: "2016-01-01"
+      to: "2016-06-01"
       role: "CTO"
       techs: "Rails, Angular"
       company: "Mozsaico"
@@ -227,14 +232,16 @@ cv:
         Built the MVP alone, which included a web application and a Chrome
         extension.
 
-    - date: "Dec/2015 - Apr/2018"
+    - from: "2015-12-01"
+      to: "2018-04-01"
       role: "Online Consulting, Mentoring and Freelance"
       techs: "Ruby, Angular, React, Redux, Python, Azure Machine Learning, Meteor"
       description: >
         Provided consulting sessions on technology decisions, refactoring,
         software design and debugging, as well as mentoring and career advice.
 
-    - date: "Feb/2014 - Dec/2015"
+    - from: "2014-02-01"
+      to: "2015-12-01"
       role: "Lead Fullstack Developer"
       techs: "Rails, Angular"
       company: "Dunno"
@@ -248,7 +255,8 @@ cv:
         monitor their progress. It was my first time writing a SPA, and when I
         first started to learn more deeply JavaScript's foundations.
 
-    - date: "Dec/2012 - Feb/2014"
+    - from: "2012-12-01"
+      to: "2014-02-01"
       role: "Fullstack Developer"
       techs: "Rails, jQuery, AWS EC2"
       company: "Outra Coisa"
@@ -259,7 +267,8 @@ cv:
         responsible for the Amazon EC2 server and the migration to Heroku.
         Strong emphasis in design, with pixel-perfect implementations.
 
-    - date: "Jul/2010 - Oct/2011"
+    - from: "2010-07-01"
+      to: "2011-10-01"
       role: "Fullstack Developer"
       techs: "Rails, jQuery"
       company: "STI"
@@ -270,7 +279,8 @@ cv:
         learning Ruby on Rails, was part of a Scrum team in close contact with
         the client, performing requirements gathering and coding.
 
-    - date: "Aug/2008 - May/2009"
+    - from: "2008-08-01"
+      to: "2009-05-01"
       role: "Desktop Developer"
       techs: "Java"
       company: "LMDC"
