@@ -2,14 +2,15 @@
 layout: page
 permalink: /cv/
 title: CV
+contentClass: cv
 ---
-<!--
 <link href="/assets/css/cv-screen.css" type="text/css" rel="stylesheet" media="screen">
--->
 <link href="/assets/css/cv-print.css" type="text/css" rel="stylesheet" media="print">
 
 # Marcos Rodrigues
 Team leader, Full-Stack Developer, Functional Programming enthusiast.
+
+*30 years, married, living in Yokohama, Japan.*
 
 <div id="webaddress">
   <a href="mailto:hi@oddlyfunctional.com">hi@oddlyfunctional.com</a>
@@ -17,7 +18,6 @@ Team leader, Full-Stack Developer, Functional Programming enthusiast.
   | <a href="https://www.oddlyfunctional.com/">https://www.oddlyfunctional.com/</a>
 </div>
 
-30 years, married, living in Yokohama, Japan.
 
 ## Current position
 
@@ -56,7 +56,7 @@ collection of domains. While deeply specialized in software engineering, I'm als
 able to write more advanced algorithms. I'm particularly proud of my debugging skills,
 strongly influenced by the scientific method.
 
-### Technologies
+## Technologies
 
 - Ruby/Ruby on Rails
 - JavaScript
@@ -75,8 +75,8 @@ strongly influenced by the scientific method.
 __oduk. kk__
 *February 2018 - Present*
 - Senior Lead Fullstack Developer (Ruby on Rails, React, Redux)
-_ Yokohama, Kanagawa, Japan
-Building a TripAdvisor-like application in a team of 2 developers, focused on
+- Yokohama, Kanagawa, Japan
+- Currently building a TripAdvisor-like application in a team of 2 developers, focused on
 high-quality videos of venues and experiences in Japan, in preparation for the
 2020 Olympics.
 
@@ -84,7 +84,7 @@ __Santo Contrato Gestão Contratual__
 *March 2017 - Present*
 - CTO (Ruby on Rails) and business partner
 - Remote position
-Business partner in a lawtech company. Built alone a platform for managing
+- Business partner in a lawtech company. Built alone a platform for managing
 legal documents, deadlines and other assets, with collaborative sharing,
 versioning, live chat, notifications and granular permissions system.
 
@@ -92,14 +92,14 @@ __LanguagesSkills®__
 *September 2017 - April 2018 (8 months)*
 - Consulting and Development (Ruby on Rails, React, Redux)
 - São Paulo, Brazil
-Provided consulting sessions and built parts of a language-learning platform
+- Provided consulting sessions and built parts of a language-learning platform
 focused on specialized training for employees of organizations.
 
 __Le Wagon__
 *March 2017 - December 2017 (10 months)*
 - Lead Teacher
 - São Paulo, Brazil
-Teacher at an international coding bootcamp. Was responsible for lectures and
+- Teacher at an international coding bootcamp. Was responsible for lectures and
 one-on-one help. Due to my firmly grounded ability to answer questions and
 solve bugs, as well as the thoroughness of my explanations, several students
 sought me for mentoring, career advice and consulting on their startups.
@@ -108,21 +108,21 @@ __Mozsaico__
 *January 2016 - June 2016 (6 months)*
 - CTO (Ruby on Rails, Angular) and business partner
 - Remote position
-Business partner from day zero in an edutech startup, developed a platform for
+- Business partner from day zero in an edutech startup, developed a platform for
 managing and discussing content within organizations. Built the MVP alone,
 which included a web application and a Chrome extension.
 
 __Online Consulting, Mentoring and Freelance__
 *December 2015 - April 2018 (1 year 4 months)*
 - Ruby, Angular, React, Redux, Python, Azure Machine Learning, Meteor
-Provided consulting sessions on technology decisions, refactoring, software
+- Provided consulting sessions on technology decisions, refactoring, software
 design and debugging, as well as mentoring and career advice.
 
 __Dunno__
 *February 2014 - December 2015 (1 year 11 months)*
 - Senior Lead Fullstack Developer (Ruby on Rails, Angular) and business partner
 - Remote position
-Business partner in an edutech startup. Responsible for making technology
+- Business partner in an edutech startup. Responsible for making technology
 decisions in a team of 2 engineers, building the project from scratch while
 working closely to the CEO to validate the product. The app was used by
 teachers and their students to organize content and collaborate on discussion
@@ -134,7 +134,7 @@ __Outra Coisa__
 *December 2012 - February 2014 (1 year 3 months)*
 - Fullstack Developer (Ruby on Rails, jQuery, Amazon EC2)
 - Rio de Janeiro, Brazil
-Maintained and wrote new features for production applications (audio clips
+- Maintained and wrote new features for production applications (audio clips
 marketplace and city guide) in a team of 4 developers. Was responsible for the
 Amazon EC2 server and the migration to Heroku. Strong emphasis in design, with
 pixel-perfect implementations.
@@ -143,7 +143,7 @@ __STI__
 *July 2010 - October 2011 (1 year 4 months)*
 - Niterói, Brazil
 - Fullstack Developer (Ruby on Rails, jQuery)
-Developed from scratch a social network (team of 3) and a school administration
+- Developed from scratch a social network (team of 3) and a school administration
 system (team of 8) for a college. First job after learning Ruby on Rails, was
 part of a Scrum team in close contact with the client, performing requirements
 gathering and coding.
@@ -152,7 +152,7 @@ __LMDC__
 *August 2008 - May 2009 (10 months)*
 - Niterói, Brazil
 - Desktop Developer (Java)
-Desktop development for ERD application using javax.swing.
+- Desktop development for ERD application using javax.swing.
 
 ## Education
 
