@@ -17,7 +17,7 @@ owner:
   email:          hi@oddlyfunctional.com
   phone:          +81 70-1812-4404
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
-  description:    Ruby and JavaScript expert, teacher at Le Wagon, CTO at Santo Contrato, enthusiastic learner.
+  description:    "I've been writing web applications since 2010, mostly Ruby and JavaScript. I'm a consultant and serial entrepreneur, passionate about Functional Programming. Currently exploring the Japanese startup scene. I'm also an amateur bartender 🍸and game developer 🎮"
   # Social networking links used in footer. Update and remove as you like.
   twitter:        oddlyfunctional
   facebook:       oddlyfunctional
@@ -123,10 +123,6 @@ prose:
               value: personal
             - name: "Engineering"
               value: engineering
-            - name: "Physics"
-              value: physics
-            - name: "Psychology"
-              value: psychology
             - name: "Interesting"
               value: interesting
             - name: "Web-Development"
