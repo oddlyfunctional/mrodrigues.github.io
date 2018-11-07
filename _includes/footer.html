@@ -5,8 +5,16 @@
     </div>
     <div class="social-icons">
         
+        {% if site.owner.linkedin %}
+        <a href="{{ site.owner.linkedin }}" target="_blank">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa fa-linkedin fa-stack-1x"></i>
+            </span>
+        </a>
+        {% endif %}
         {% if site.owner.twitter %}
-        <a href="http://twitter.com/{{ site.owner.twitter }}">
+        <a href="http://twitter.com/{{ site.owner.twitter }}" target="_blank">
             <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
                 <i class="fa fa-twitter fa-stack-1x"></i>
@@ -14,7 +22,7 @@
         </a>
         {% endif %}
         {% if site.owner.google_plus %}
-        <a href="{{ site.owner.google_plus }}">
+        <a href="{{ site.owner.google_plus }}" target="_blank">
             <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
                 <i class="fa fa-google-plus fa-stack-1x"></i>
@@ -22,7 +30,7 @@
         </a>
         {% endif %}
         {% if site.owner.instagram %}
-        <a href="http://instagram.com/{{ site.owner.instagram }}">
+        <a href="http://instagram.com/{{ site.owner.instagram }}" target="_blank">
             <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
                 <i class="fa fa-instagram fa-stack-1x"></i>
@@ -30,7 +38,7 @@
         </a>
         {% endif %}
         {% if site.owner.github %}
-        <a href="http://github.com/{{ site.owner.github }}">
+        <a href="http://github.com/{{ site.owner.github }}" target="_blank">
             <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
                 <i class="fa fa-github fa-stack-1x"></i>
@@ -38,14 +46,16 @@
         </a>
         {% endif %}
         {% if site.owner.facebook %}
-        <a href="http://facebook.com/{{ site.owner.facebook }}">
+        <a href="http://facebook.com/{{ site.owner.facebook }}" target="_blank">
             <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
                 <i class="fa fa-facebook fa-stack-1x"></i>
             </span>
         </a>
         {% endif %}
-        <a href="https://www.codementor.io/mrodrigues?utm_source=github&utm_medium=button&utm_term=mrodrigues&utm_campaign=github"><img src="https://cdn.codementor.io/badges/codementor_light.svg" alt="Codementor" style="max-width:100%"/></a>
+        <a href="https://www.codementor.io/mrodrigues" target="_blank">
+          <img src="https://cdn.codementor.io/badges/codementor_light.svg" alt="Codementor" style="max-width:100%"/>
+        </a>
     </div>
     
     <div class="cf"></div>
