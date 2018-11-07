@@ -36,3 +36,40 @@ title: CV
 </div>
 <!-- ### Footer
 Last updated: November 2018 -->
+
+ <script>
+   (function() {
+     if (!document.querySelectorAll) { return; }
+
+     document.querySelectorAll("[data-from]").forEach(function(job) {
+       var distance = extractDistance(job.dataset.from, job.dataset.to);
+       job.textContent = " • " + formatDistance(distance);
+     });
+
+     function extractDistance(from, to) {
+       var from = new Date(from);
+       var to = to && new Date(to) || new Date();
+
+       var months = (to.getYear() * 12 + to.getMonth()) - (from.getYear() * 12 + from.getMonth());
+       var years = Math.floor(months / 12);
+       months = months % 12;
+
+       return { months: months, years: years };
+     }
+
+     function pluralize(word, count) {
+       if (count === 0) { return ""; }
+
+       let s = [String(count), word].join(" ");
+       if (count > 1) { return s + "s"; }
+       return s;
+     }
+
+     function formatDistance(distance) {
+       var months = distance.months;
+       var years = distance.years;
+
+       return [pluralize("year", years), pluralize("month", months)].filter(x => x).join(" ");
+     }
+   })();
+ </script>
