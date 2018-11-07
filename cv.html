@@ -18,9 +18,15 @@ title: CV
 </div>
 
 <div class="addresses">
-  <a href="mailto:hi@oddlyfunctional.com">hi@oddlyfunctional.com</a>
-  | <a href="tel:+81 70-1812-4404">+81 70-1812-4404</a>
-  | <a href="https://www.oddlyfunctional.com">https://www.oddlyfunctional.com</a>
+  <a href="mailto:{{ site.owner.email }}">{{ site.owner.email }}</a>
+  <span class="divider"></span>
+
+  <a href="tel:{{ site.owner.phone }}">{{ site.owner.phone }}</a>
+
+  <span class="last">
+    <span class="divider"></span>
+    <a href="{{ site.url }}">oddlyfunctional.com</a>
+  </span>
 </div>
 
 <div class="wrapper">
@@ -34,6 +40,20 @@ title: CV
     {% endfor %}
   </div>
 </div>
+
+<div class="contact-form only-screen">
+  <h2>Need an expert? 🤓<br />Get in touch!</h2>
+
+  <form action="https://formspree.io/{{ site.owner.email }}" method="POST">
+    <input required type="text" name="name" placeholder="👤 Who are you?">
+    <input required type="email" name="_replyto" placeholder="✉️ Tell me your email">
+    <textarea required name="message" rows="5" placeholder="💬 Give me some details"></textarea>
+    <button type="submit">Hire a nerd 🖖</button>
+  </form>
+
+  <p>Or send an email to <a href="mailto:{{ site.owner.email }}">{{ site.owner.email }}</a></p>
+</div>
+
 <!-- ### Footer
 Last updated: November 2018 -->
 
@@ -45,6 +65,8 @@ Last updated: November 2018 -->
        var distance = extractDistance(job.dataset.from, job.dataset.to);
        job.textContent = " • " + formatDistance(distance);
      });
+
+     document.querySelectorAll("textarea").forEach(autoResize);
 
      function extractDistance(from, to) {
        var from = new Date(from);
@@ -70,6 +92,16 @@ Last updated: November 2018 -->
        var years = distance.years;
 
        return [pluralize("year", years), pluralize("month", months)].filter(x => x).join(" ");
+     }
+
+     function autoResize(textArea) {
+       textArea.setAttribute("style", "height:" + textArea.scrollHeight + "px;overflow-y:hidden;");
+       textArea.addEventListener("input", onTextAreaInput, false);
+     }
+
+     function onTextAreaInput() {
+       this.style.height = "auto";
+       this.style.height = (this.scrollHeight) + "px";
      }
    })();
  </script>
