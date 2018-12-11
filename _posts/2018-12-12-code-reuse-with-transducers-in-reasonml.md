@@ -43,7 +43,7 @@ migrate to a transducer implementation, then exemplify how function composition
 makes refactoring easy, then finally demonstrate how effortless it is to reuse
 the same pipeline for other data structures.
 
-```reasonml
+```js
 type person = { age: int, name: string };
 
 let countAdultsWithInitial = (initial, people) =>
@@ -72,7 +72,7 @@ it's stored in a trie for quick data retrieval in an autocomplete?
 
 Let's refactor the code above into a transducer and see how flexible it becomes:
 
-```reasonml
+```js
 module T = Transducer;
 
 /* We introduce an infix operator to make it easier to compose long sequences
@@ -103,7 +103,7 @@ function that works for the data structure of choice.
 Let's now take another moment to refactor the code above, showcasing how easy it is to
 extract pipelines when your building block is function composition:
 
-```reasonml
+```js
 /* Ideally, we should be able to use point-free style with the function
 composition operator, ommiting the `combine` function, but at the moment I'm
 still struggling with ReasonML's type inference, and this was the only way I
@@ -149,7 +149,7 @@ Now, let's try applying the same transducers, without modification, to a
 completely different context. For simplicity, let's use a custom tree data
 structure.
 
-```reasonml
+```js
 module Tree {
   type tree = Empty | Node(person, tree, tree);
 
