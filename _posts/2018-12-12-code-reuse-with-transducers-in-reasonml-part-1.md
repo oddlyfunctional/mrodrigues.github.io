@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Code reuse with transducers in ReasonML"
+title: "Code reuse with transducers in ReasonML - Part 1"
 description: "ReasonML's lack of polymorphic behavior makes it hard to reuse data processing pipelines in different contexts. In this post I demonstrate how to use transducers to overcome that limitation."
 headline: 
 modified: 2018-12-12 02:00:12 +0900
@@ -19,7 +19,7 @@ some code and make it reusable, overcoming some limitations in the ReasonML
 language.
 
 The first time I tried to understand transducers, I thought it was just a
-technique to optimize memory consumption by avoiding unnecessary intermediate
+technique to reduce memory allocation by avoiding unnecessary intermediate
 steps. Due to my background in object-oriented design, I failed to consider
 what makes transducers really shine: complete decoupling between data
 transformation, data combination and data source. In a language with
@@ -35,7 +35,8 @@ on the subject and reading
 [Kyle Simpson's Functional-Light JavaScript](https://github.com/getify/Functional-Light-JS/blob/master/manuscript/apA.md/).
 It's enough to say that by parameterizing utilities such as `map` and `filter`
 with a function representing the next step in the computation, it's suddenly
-possible to build pipelines simply with function composition.
+possible to build pipelines simply with function composition, resolving the
+whole pipeline in just one call.
 
 Instead, we'll focus on how transducers can help building maintainable code. To
 illustrate, we'll start with a simple example, hard-coded using `List`s, then
@@ -65,7 +66,7 @@ people
 ```
 
 The code above has two problems: every step in the process creates a new list,
-increasing memory consumption. It is also very difficult to adapt into
+increasing memory allocation. It is also very difficult to adapt into
 something other than lists. For example, what if the data is displayed in a
 real-time dashboard, coming through a web socket using observables? Or maybe
 it's stored in a trie for quick data retrieval in an autocomplete?
@@ -75,8 +76,8 @@ Let's refactor the code above into a transducer and see how flexible it becomes:
 ```js
 module T = Transducer;
 
-/* We introduce an infix operator to make it easier to compose long sequences
-of function calls */
+/* We introduce an infix operator to make it easier to compose long sequences of
+function calls, so instead of `let a = x => b(c(x))`, we can write `let a = b << c` */
 let (<<) = (f, g) => x => f(g(x));
 
 let countAdultsWithInitial = initial =>
@@ -91,24 +92,26 @@ people
 |> Js.log
 ```
 
-Notice that inside the `countAdultsWithInitial` function there's no mention to
-lists. It also means that we don't have access to `List.length` anymore, which
-forces us to change how we calculate it. In the example above, since we're not
-interested in collecting any individual information, after filtering we can
-simply map each element into the integer 1, disregarding the record entirely,
-and use a sum function. As you may have noticed, what `countAdultsWithInitial`
-returns is a reducer, so the only requirement for using it is having a fold
-function that works for the data structure of choice.
+Notice that inside `countAdultsWithInitial`, there's no mention to list-related
+functions; there's actually no mention of a data source at all! This means that
+we're completely decoupled from where our data originates from. It also means
+that we don't have access to `List.length` anymore, which forces us to change
+how we calculate it. In the example above, since we're not interested in
+collecting any individual information, after filtering we can simply map each
+element into the integer 1, disregarding the record entirely, and use a sum
+function. As you may have noticed, what `countAdultsWithInitial` returns is a
+reducer, so the only requirement for using it is having a fold function that
+works for the data structure of choice.
 
 Let's now take another moment to refactor the code above, showcasing how easy it is to
 extract pipelines when your building block is function composition:
 
 ```js
 /* Ideally, we should be able to use point-free style with the function
-composition operator, ommiting the `combine` function, but at the moment I'm
-still struggling with ReasonML's type inference, and this was the only way I
-could find to make it compile. I'll update the post accordingly as I find
-better implementations. */
+composition operator, ommiting the `combine` function, but so far I have been
+struggling with ReasonML's type inference, so this was one way I've found to
+make it compile. I'll update the post accordingly as I find better
+implementations. */
 let adultsWithInitial = (initial, combine) =>
   combine |> (
     T.filter(person => String.get(person.name, 0) == initial)
