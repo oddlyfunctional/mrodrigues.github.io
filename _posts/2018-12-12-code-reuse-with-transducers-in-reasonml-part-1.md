@@ -44,7 +44,7 @@ migrate to a transducer implementation, then exemplify how function composition
 makes refactoring easy, then finally demonstrate how effortless it is to reuse
 the same pipeline for other data structures.
 
-```js
+```rust
 type person = { age: int, name: string };
 
 let countAdultsWithInitial = (initial, people) =>
@@ -73,7 +73,7 @@ it's stored in a trie for quick data retrieval in an autocomplete?
 
 Let's refactor the code above into a transducer and see how flexible it becomes:
 
-```js
+```rust
 module T = Transducer;
 
 /* We introduce an infix operator to make it easier to compose long sequences of
@@ -106,7 +106,7 @@ works for the data structure of choice.
 Let's now take another moment to refactor the code above, showcasing how easy it is to
 extract pipelines when your building block is function composition:
 
-```js
+```rust
 /* Ideally, we should be able to use point-free style with the function
 composition operator, ommiting the `combine` function, but so far I have been
 struggling with ReasonML's type inference, so this was one way I've found to
@@ -152,7 +152,7 @@ Now, let's try applying the same transducers, without modification, to a
 completely different context. For simplicity, let's use a custom tree data
 structure.
 
-```js
+```rust
 module Tree {
   type tree = Empty | Node(person, tree, tree);
 
